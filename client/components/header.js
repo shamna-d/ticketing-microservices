@@ -20,11 +20,24 @@ const Header = ({ currentUser }) => {
     }
 
     return (
-      <li className="nav-item">
-        <Link className="nav-link" href="/auth/signout">
-          Sign Out
-        </Link>
-      </li>
+      <>
+        <li className="nav-item">
+          <Link className="nav-link" href="/tickets/new">
+            Sell Tickets
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" href="/orders">
+            My Orders
+          </Link>
+        </li>
+
+        <li className="nav-item">
+          <Link className="nav-link" href="/auth/signout">
+            Sign Out
+          </Link>
+        </li>
+      </>
     );
   };
 
